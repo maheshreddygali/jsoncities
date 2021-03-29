@@ -16,15 +16,13 @@ function getTemp(){
             break
             
             
-     case "Canada": my(dat)
-     Logger.log("canada")
-     break
-     
-     case "London": my(dat)
-            Logger.log("London")
+    case "Canada": my(dat)
+            Logger.log("canada")
             break
             
-            
+    case "Kolkata": my(dat)
+            Logger.log("Kolkata")
+            break
   }
   }
 catch (error){
@@ -33,7 +31,7 @@ Logger.log(error)
 
 }
 function my(getData) {
-  var data =   {"sidney":30,"Perth":40,"Canada":7,"London":20}
+  var data =   {"sidney":30,"Perth":40,"Canada":7,"Kolkata":35}
   data=JSON.stringify(data)
   var parsedData = JSON.parse(data);
 
