@@ -1,1 +1,30 @@
 //This is contributed by ITG 136-137
+function getTemp(){
+  try{
+    
+   var dat="sidney"
+  switch(dat){
+    case "sidney": my(dat)
+            Logger.log(dat)
+            break
+    case "perth":my(dat)
+    Logger.log("perth")
+    break
+    
+    case "Hobart": my(dat)
+            Logger.log("Hobart")
+            break
+  }
+  }
+catch (error){
+Logger.log(error)
+}
+
+}
+function my(getData) {
+  var data =   {"sidney":30,"Perth":40}
+  data=JSON.stringify(data)
+  var parsedData = JSON.parse(data);
+
+  Logger.log(parsedData[getData])
+}
