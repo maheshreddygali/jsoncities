@@ -5,24 +5,29 @@ function getTemp(){
    var dat="sidney"
   switch(dat){
     case "sidney": my(dat)
-            Logger.log(dat)
-            break
-    case "perth":my(dat)
-    Logger.log("perth")
-    break
+                   Logger.log(dat)
+                   break
+                   
+    case "perth": my(dat)
+                  Logger.log("perth")
+                  break
     
     case "Hobart": my(dat)
-            Logger.log("Hobart")
-            break
+                   Logger.log("Hobart")
+                   break
             
             
     case "Canada": my(dat)
-            Logger.log("canada")
-            break
+                   Logger.log("canada")
+                   break
+            
+    case "Melbourne" : my(dat)
+                       Logger.log("Melbourne")
+                       break
             
     case "Kolkata": my(dat)
-            Logger.log("Kolkata")
-            break
+                    Logger.log("Kolkata")
+                    break
   }
   }
 catch (error){
@@ -31,7 +36,7 @@ Logger.log(error)
 
 }
 function my(getData) {
-  var data =   {"sidney":30,"Perth":40,"Canada":7,"Kolkata":35}
+  var data =   {"sidney":30, "Perth":40, "Canada":7, "Melbourne":32, "Kolkata":35}
   data=JSON.stringify(data)
   var parsedData = JSON.parse(data);
 
