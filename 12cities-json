@@ -28,7 +28,7 @@ Logger.log(error)
 
 }
 function my(getData) {
-  var data =   {"sidney":30, "Perth":40,  "melbourne":35}
+  var data =   {"sidney":30, "Perth":40, "melbourne":35}
   data=JSON.stringify(data)
   var parsedData = JSON.parse(data);
 
